@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import 'package:dart_fitness_app/resources/Colors.dart';
 import 'package:dart_fitness_app/utils/GeneralUtils.dart';
 import 'package:dart_fitness_app/utils/Routes/Routes_Name.dart';
@@ -5,6 +6,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+=======
+import 'package:flutter/material.dart';
+>>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c
 
 
 
@@ -16,6 +20,7 @@ class GetFit extends StatefulWidget {
 }
 
 class _GetFitState extends State<GetFit> {
+<<<<<<< HEAD
   final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
@@ -161,3 +166,20 @@ class _GetFitState extends State<GetFit> {
   }
 }
 
+=======
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+        ),
+        body: Column(
+          children: [
+
+        ],),
+      ),
+    );
+  }
+}
+>>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c

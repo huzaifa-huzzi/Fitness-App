@@ -48,8 +48,13 @@ class MyApp extends StatelessWidget {
                 color:Colors.white,
               ),
               bodyMedium: GoogleFonts.poppins(
+<<<<<<< HEAD
                   color:Colors.grey,
                   fontSize:25,
+=======
+                  color:Colors.white,
+                  fontSize:22,
+>>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c
                   fontStyle:FontStyle.normal
               ),
               displaySmall: GoogleFonts.poppins(
@@ -57,7 +62,11 @@ class MyApp extends StatelessWidget {
                 color:Colors.grey,
               ),
               displayMedium: GoogleFonts.poppins(
+<<<<<<< HEAD
                   fontSize:25,
+=======
+                  fontSize:30,
+>>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c
                   color:Colors.white,
                   fontStyle:FontStyle.italic
               )

@@ -63,11 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         const   Padding(
-                                              padding: EdgeInsets.only(),
+                                              padding: EdgeInsets.only(right: 20),
                                               child: Icon(FontAwesomeIcons.dumbbell,size: 80,color: Colors.white,)),
                                         const SizedBox(height: 10,),
                                         Padding(
-                                            padding:const  EdgeInsets.only(left: 15),
+                                            padding:const  EdgeInsets.only(left: 10),
                                             child: Text('Get Fit',style: Theme.of(context).textTheme.bodyMedium!.copyWith(),))
                                       ],
                                     ),
@@ -102,11 +102,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                     crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                      const  Padding(
-                                          padding:EdgeInsets.only(left: 15),
+                                          padding:EdgeInsets.only(left: 5),
                                           child:   Icon(FontAwesomeIcons.weightScale,size: 80,color: Colors.white,)),
                                       const SizedBox(height: 10,),
                                       Padding(
-                                          padding:const  EdgeInsets.only(left: 22),
+                                          padding:const  EdgeInsets.only(left: 42),
                                           child: Text('Weight Loss',style: Theme.of(context).textTheme.bodyMedium!.copyWith(),))
                                     ],
                                   ),

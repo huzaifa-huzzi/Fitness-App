@@ -1,14 +1,9 @@
-<<<<<<< HEAD
+
 import 'package:dart_fitness_app/resources/Colors.dart';
 import 'package:dart_fitness_app/utils/GeneralUtils.dart';
 import 'package:dart_fitness_app/utils/Routes/Routes_Name.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-=======
-import 'package:flutter/material.dart';
->>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c
 
 
 
@@ -20,7 +15,7 @@ class GetFit extends StatefulWidget {
 }
 
 class _GetFitState extends State<GetFit> {
-<<<<<<< HEAD
+
   final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
@@ -28,9 +23,16 @@ class _GetFitState extends State<GetFit> {
     return    Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
+        automaticallyImplyLeading: false,
         actions: [
           Row(
             children: [
+            InkWell(
+                onTap: (){
+                  Navigator.pushNamed(context, RouteName.homeScreen);
+                },
+                child: const   Icon(Icons.arrow_back_ios)),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.60),
              const  Icon(Icons.share),
               SizedBox(width: MediaQuery.of(context).size.width * 0.1),
               InkWell(
@@ -45,6 +47,7 @@ class _GetFitState extends State<GetFit> {
                 child: const Icon(Icons.logout),
               ),
               SizedBox(width: MediaQuery.of(context).size.width * 0.05),
+
             ],
           )
         ],
@@ -84,9 +87,14 @@ class _GetFitState extends State<GetFit> {
                       ),
                     ),
                     SizedBox(width: MediaQuery.of(context).size.width * 0.2),
-                    Text(
-                      'Review',
-                      style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                    InkWell(
+                      onTap: (){
+                        Navigator.pushNamed(context, RouteName.review);
+                      },
+                      child: Text(
+                        'Review',
+                        style: Theme.of(context).textTheme.bodyMedium!.copyWith(),
+                      ),
                     ),
                   ],
                 ),
@@ -165,21 +173,3 @@ class _GetFitState extends State<GetFit> {
 
   }
 }
-
-=======
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-        ),
-        body: Column(
-          children: [
-
-        ],),
-      ),
-    );
-  }
-}
->>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c

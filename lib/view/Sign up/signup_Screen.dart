@@ -35,7 +35,9 @@ class _SignUPState extends State<SignUP> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-       appBar: AppBar(),
+       appBar: AppBar(
+         automaticallyImplyLeading: false,
+       ),
       body: SingleChildScrollView(
         child: Padding(
           padding:const  EdgeInsets.only(top: 250),
@@ -66,7 +68,7 @@ class _SignUPState extends State<SignUP> {
                           ),
                           InputFormField(myController: passwordController, focusNode: passwordFocus, onfieldSubmitted: (_){}, onValidator: (value){
                             return value.isEmpty ? 'enter password' : null ;
-                          }, hint: 'Password', obsecreText: false, keyboraType: TextInputType.text),
+                          }, hint: 'Password', obsecreText: true, keyboraType: TextInputType.text),
                         ],
                       ),
                     )

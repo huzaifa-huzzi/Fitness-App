@@ -2,6 +2,7 @@ import 'package:dart_fitness_app/Provider/SignupProvider.dart';
 import 'package:dart_fitness_app/utils/Routes/RoutesInitializing.dart';
 import 'package:dart_fitness_app/utils/Routes/Routes_Name.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:provider/provider.dart';
@@ -48,13 +49,8 @@ class MyApp extends StatelessWidget {
                 color:Colors.white,
               ),
               bodyMedium: GoogleFonts.poppins(
-<<<<<<< HEAD
                   color:Colors.grey,
                   fontSize:25,
-=======
-                  color:Colors.white,
-                  fontSize:22,
->>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c
                   fontStyle:FontStyle.normal
               ),
               displaySmall: GoogleFonts.poppins(
@@ -62,11 +58,7 @@ class MyApp extends StatelessWidget {
                 color:Colors.grey,
               ),
               displayMedium: GoogleFonts.poppins(
-<<<<<<< HEAD
                   fontSize:25,
-=======
-                  fontSize:30,
->>>>>>> f0cb57f769da4c0f4f497416823db96e6548c52c
                   color:Colors.white,
                   fontStyle:FontStyle.italic
               )
